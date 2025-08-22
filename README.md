@@ -18,7 +18,7 @@ In the package `neighbor_node.py` design the methods `euclidean_dist_to_origin` 
     - Your node will listen for UDP "beacon messages" that simulate cars broadcasting their position. These will represent the ROS2 output topics in future work.
     - Your node should then have the computed closest vehicle from `nearest_neighbor(beacons)` and publish a summary message in the required output format. 
   
-###Beacon Handling example
+### Beacon Handling example
 Example: 
     Input: `/input/beacons` 
     - Format: JSON beacon sent via UDP `{"id":"veh_123","pos":[10.0,5.0],"speed":4.0,"ts":123456789}`
