@@ -17,8 +17,19 @@ In the package `neighbor_node.py` design the methods `euclidean_dist_to_origin` 
 - `beacon handling`
     - Your node will listen for UDP "beacon messages" that simulate cars broadcasting their position. These will represent the ROS2 output topics in future work.
     - Your node should then have the computed closest vehicle from `nearest_neighbor(beacons)` and publish a summary message in the required output format. 
-  
-### Beacon Handling example
+
+
+### euclidean_dist_to_origin
+Example:
+    Input: pos = [3.0, 4.0]
+    Output: 5.0 
+
+### nearest_neighbor(beacons)
+Example: 
+    Input: neighbors = {"veh_123": {"pos": [10, 5], "speed": 4.0, "last_ts": 12345},"veh_B":   {"pos": [3, 4],  "speed": 2.0, "last_ts": 12346}}
+    Output: ("veh_B", 5.0)
+
+### Beacon Handling
 Example: 
     Input: `/input/beacons` 
     - Format: JSON beacon sent via UDP `{"id":"veh_123","pos":[10.0,5.0],"speed":4.0,"ts":123456789}`    
@@ -33,10 +44,9 @@ Example:
     
 
 ## Submission Specificaion
-- You node should be written in either Matlab, Python, or C++.
-- The package name should be `merge_arrays` and node should be called `merge_arrays_node`.
-- Your node will be evaluated by an automated system with `ros2 run merge_arrays merge_arrays_node`.
-- You are not allowed to use non-ROS dependencies for this challenge.
+- You node should be written in Python
+- Your node will be evaluated by an automated grading system with the commands listed.
+- You are allowed to use help from outside sources but attempt without copying from generated code
 - Please upload the full package in the correct folder structure to a public github repository for us to review.  
 
 
@@ -44,6 +54,5 @@ Example:
 ## Tips
 
 1. You are allowed to use any resources available to you. Google is your friend!
-2. [ROS2 Humble documentation](https://docs.ros.org/en/foxy/Releases/Release-Humble-Hawksbill.html) is a great place to start if you are new to ROS. This [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) walks you through how to create a publisher and subscriber node in c++, and this [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) in python.
-3. Ubuntu 22.04 is required for ROS2 Humble. You will need to set up dual boot, or use Docker, or WSL. We use Ubuntu 22.04 for all our code so might be a good idea to start getting familiar with it.
-4. The learning curve can be steep here! We don't want you to get stuck! Feel free to send high-level questions to kasha2@wisc.edu if you have high-level questions! Please put "[WA]" in the subject or your question may be ignored!
+2. (Optional but required for future) [ROS2 Humble documentation](https://docs.ros.org/en/foxy/Releases/Release-Humble-Hawksbill.html) is a great place to start if you are new to ROS. This [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) walks you through how to create a publisher and subscriber node in c++, and this [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) in python.
+4. The learning curve can be steep here! We don't want you to get stuck! Feel free to send high-level questions to ejxie@wisc.edu if you have questions! Please put "[WA]" in the subject or your question may be ignored!
