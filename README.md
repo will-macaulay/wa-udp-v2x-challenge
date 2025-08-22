@@ -1,23 +1,36 @@
-# Wisconsin Autonomous ROS Coding Challenge
+# Wisconsin Autonomous Infrastructure Subteam Coding Challenge ROS2 Simulation 
 
-This coding challenge is designed for us to evaluate what you can bring to the table and an opportunity for you to get some hands on experience with the tools we use on the controls and infrastructure sub-teams. We use ROS2 Humble as our middleware for our modular system to communicate with each other. A good understanding of ROS is vital for our success. While we understand that this might be your first time using ROS, this challenge also aims for us to see how you can learn on the fly, which is an important aspect of being part of this team.  
+This coding challenge is designed for us to evaluate what you can bring to the table and an opportunity for you to get some hands on experience with the tools we use on the controls and infrastructure sub-teams. We use ROS2 Humble as our middleware for our modular system to communicate with each other. A good understanding of ROS is vital for our success. While we understand that this might be your first time hearing of ROS, this challenge also aims for us to see how you can learn on the fly, which is an important aspect of being part of this team. The challenge will simulate ROS2 publisher and subscribers system using UDP messages in Python.
 
 ## Challenge Descrpiption
 
-Please design a node `merge_arrays_node` in a package `merge_arrays`. The specification on the node is as following:  
-You will be given two ROS topics to subscribe to:  
+In the package `neighbor_node.py` design the methods `euclidean_dist_to_origin` and `nearest_neighbor`. The two methods will make use of the car beacon messages sent. Then add the implementaion `beacon handling` in the main function. 
 
-- `/input/array1`
-    - Type: `std_msgs/Int32MultiArray`
-    - Content: an array of sorted `Int32`
+- `euclidean_dist_to_origin(pos)`
+    - Input: 2D position `[x,y]`
+    - Output: Distance from the origin (0,0) to that point
 
-- `/input/array2`
-    - Type: `std_msgs/Int32MultiArray`
-    - Content: an array of sorted `Int32`
+- `nearest_neighbor(beacons)`
+    - Input: A list of car beacon messages (each containing an ID and position)
+    - Output: The nearest neighbor `(ID and distance)`
 
-Your node will take in these two arrays and create a merged sorted array. This merged sorted array will be published to ROS topic `/output/array`. The type will also be `std_msgs/Int32MultiArray`.  
-
-Example: given `[1 4 8 12 26]` and `[3 9 18 20 30]`, you node should publish `[1 3 4 8 9 12 18 20 26 30]`. If nothing is making sense dont worry, there are helpful links below to help you understand the lingo.
+- `beacon handling`
+    - Your node will listen for UDP "beacon messages" that simulate cars broadcasting their position. These will represent the ROS2 output topics in future work.
+    - Your node should then have the computed closest vehicle from `nearest_neighbor(beacons)` and publish a summary message in the required output format. 
+  
+###Beacon Handling example
+Example: 
+    Input: `/input/beacons` 
+    - Format: JSON beacon sent via UDP `{"id":"veh_123","pos":[10.0,5.0],"speed":4.0,"ts":123456789}`
+    Output: /output/neighbor_summary
+    - Format: JSON line printed to stdout 
+    {
+        "topic": "/v2x/neighbor_summary",
+        "count": 1,
+        "nearest": {"id":"veh_123","dist":11.18},
+        "ts": 123456999
+    }
+    
 
 ## Submission Specificaion
 - You node should be written in either Matlab, Python, or C++.
