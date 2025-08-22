@@ -64,4 +64,5 @@ Example:
 
 1. You are allowed to use any resources available to you. Google is your friend!
 2. (Optional but required for future) [ROS2 Humble documentation](https://docs.ros.org/en/foxy/Releases/Release-Humble-Hawksbill.html) is a great place to start if you are new to ROS. This [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) walks you through how to create a publisher and subscriber node in c++, and this [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) in python.
+3. Hint: Make sure to use isinstance checks since messages are UDP to JSON and python may throw errors when doing math with data.
 4. The learning curve can be steep here! We don't want you to get stuck! Feel free to send high-level questions to ejxie@wisc.edu if you have questions! Please put "[WA]" in the subject or your question may be ignored!
