@@ -11,7 +11,7 @@ In the package `neighbor_node.py` design the methods `euclidean_dist_to_origin` 
     - Output: Distance from the origin (0,0) to that point
 
 - `nearest_neighbor(beacons)`
-    - Input: A list of car beacon messages (each containing an ID and position)
+    - Input: A list of car beacon messages (each containing an ID and position) 
     - Output: The nearest neighbor `(ID and distance)`
 
 - `beacon handling`
@@ -20,18 +20,18 @@ In the package `neighbor_node.py` design the methods `euclidean_dist_to_origin` 
 
 
 ### euclidean_dist_to_origin
-Example:
-    Input: pos = [3.0, 4.0]
-    Output: 5.0 
+Example:   
+    Input: pos = [3.0, 4.0]   
+    Output: 5.0    
 
-### nearest_neighbor(beacons)
-Example: 
-    Input: neighbors = {"veh_123": {"pos": [10, 5], "speed": 4.0, "last_ts": 12345},"veh_B":   {"pos": [3, 4],  "speed": 2.0, "last_ts": 12346}}
-    Output: ("veh_B", 5.0)
+### nearest_neighbor(beacons)  
+Example:    
+    Input: neighbors = {"veh_123": {"pos": [10, 5], "speed": 4.0, "last_ts": 12345},"veh_B":   {"pos": [3, 4],  "speed": 2.0, "last_ts": 12346}}   
+    Output: ("veh_B", 5.0)   
 
-### Beacon Handling
-Example: 
-    Input: `/input/beacons` 
+### Beacon Handling  
+Example:   
+    Input: `/input/beacons`   
     - Format: JSON beacon sent via UDP `{"id":"veh_123","pos":[10.0,5.0],"speed":4.0,"ts":123456789}`    
     Output: /output/neighbor_summary    
     - Format: JSON line printed to stdout    
