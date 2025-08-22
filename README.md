@@ -21,15 +21,15 @@ In the package `neighbor_node.py` design the methods `euclidean_dist_to_origin` 
 ### Beacon Handling example
 Example: 
     Input: `/input/beacons` 
-    - Format: JSON beacon sent via UDP `{"id":"veh_123","pos":[10.0,5.0],"speed":4.0,"ts":123456789}`
-    Output: /output/neighbor_summary
-    - Format: JSON line printed to stdout 
-    {
-        "topic": "/v2x/neighbor_summary",
-        "count": 1,
-        "nearest": {"id":"veh_123","dist":11.18},
-        "ts": 123456999
-    }
+    - Format: JSON beacon sent via UDP `{"id":"veh_123","pos":[10.0,5.0],"speed":4.0,"ts":123456789}`    
+    Output: /output/neighbor_summary    
+    - Format: JSON line printed to stdout    
+    {     
+        "topic": "/v2x/neighbor_summary",    
+        "count": 1,    
+        "nearest": {"id":"veh_123","dist":11.18},    
+        "ts": 123456999     
+    }   
     
 
 ## Submission Specificaion
