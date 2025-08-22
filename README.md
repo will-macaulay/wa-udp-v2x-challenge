@@ -45,8 +45,8 @@ Example:
 ### Commands
 - `python3 candidate/neighbor_node.py` Runs the candidate’s program. It should listen on UDP 5005, collect beacons for ~1s, print one JSON summary, and exit.    
 - `bash harness/launch.sh` Starts the publishers (fake car beacons + ticks) in the background of the same shell session and waits for them to finish.    
-- `bash grader/run_all.sh` bash grader/run_all.sh   
-- `chmod +x harness/launch.sh grader/run_all.sh grader/test_case_01.sh` Makes the shell scripts executable     
+- `bash grader/run_all.sh` Runs all test and prints pass or fail in order.
+- `chmod +x harness/launch.sh grader/run_all.sh grader/test_case_01.sh` Makes the shell scripts executable.     
 
     
 
