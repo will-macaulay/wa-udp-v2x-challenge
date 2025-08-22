@@ -1,6 +1,6 @@
 # Wisconsin Autonomous Infrastructure Subteam Coding Challenge ROS2 Simulation 
 
-This coding challenge is designed for us to evaluate what you can bring to the table and an opportunity for you to get some hands on experience with the tools we use on the controls and infrastructure sub-teams. We use ROS2 Humble as our middleware for our modular system to communicate with each other. A good understanding of ROS is vital for our success. While we understand that this might be your first time hearing of ROS, this challenge also aims for us to see how you can learn on the fly, which is an important aspect of being part of this team. The challenge will simulate ROS2 publisher and subscribers system using UDP messages in Python.
+This coding challenge is designed for us to evaluate what you can bring to the table and an opportunity for you to get some hands on experience with the tools we use on the controls and infrastructure sub-teams. We use ROS2 Humble as our middleware for our modular system to communicate with each other. A good understanding of ROS is vital for our success. While we understand that this might be your first time hearing of ROS, this challenge also aims for us to see how you can learn on the fly, which is an important aspect of being part of this team. The challenge will simulate ROS2 publisher and subscribers system using UDP messages in Python to create a V2X like problem, something we will be doing this year.
 
 ## Challenge Descrpiption
 
