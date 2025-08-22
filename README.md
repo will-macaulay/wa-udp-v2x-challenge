@@ -42,11 +42,20 @@ Example:
         "ts": 123456999     
     }   
     
+### Commands
+- `python3 candidate/neighbor_node.py` Runs the candidate’s program. It should listen on UDP 5005, collect beacons for ~1s, print one JSON summary, and exit.    
+- `bash harness/launch.sh` Starts the publishers (fake car beacons + ticks) in the background of the same shell session and waits for them to finish.    
+- `bash grader/run_all.sh` bash grader/run_all.sh   
+- `chmod +x harness/launch.sh grader/run_all.sh grader/test_case_01.sh` Makes the shell scripts executable     
+
+    
 
 ## Submission Specificaion
-- You node should be written in Python
+- You node should be written in Python.
+- You can use any IDE you perfer.
+- Leave comments on thought process of methods. The implementation is easy but you should be able to explain the process of pub/sub.
 - Your node will be evaluated by an automated grading system with the commands listed.
-- You are allowed to use help from outside sources but attempt without copying from generated code
+- You are allowed to use help from outside sources but attempt without copying from generated code.
 - Please upload the full package in the correct folder structure to a public github repository for us to review.  
 
 
