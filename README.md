@@ -1,6 +1,6 @@
 # Wisconsin Autonomous Infrastructure Subteam Coding Challenge ROS2 Simulation 
 
-This coding challenge is designed for us to evaluate what you can bring to the table and an opportunity for you to get some hands on experience with the tools we use on the controls and infrastructure sub-teams. We use ROS2 Humble as our middleware for our modular system to communicate with each other. A good understanding of ROS is vital for our success. While we understand that this might be your first time hearing of ROS, this challenge also aims for us to see how you can learn on the fly, which is an important aspect of being part of this team. The challenge will simulate ROS2 publisher and subscribers system using UDP messages in Python to create a V2X like problem, something we will be doing this year.
+This coding challenge is designed for us to evaluate what you can bring to the table and an opportunity for you to get some hands on experience with the tools we use on the controls and infrastructure sub-teams. We use ROS2 Humble as our middleware for our modular system to communicate with each other. A good understanding of ROS is vital for our success. While we understand that this might be your first time hearing of ROS, this challenge also aims for us to see how you can learn on the fly, which is an important aspect of being part of this team. The challenge will simulate ROS2 publisher and subscribers system using UDP messages in Python to create a V2X like problem, something we will be doing this year. Your goal is to explore and learn the ROS2 concept and be able to understand your work. This coding challenge is not required to pass the application. 
 
 ## Challenge Descrpiption
 
@@ -63,6 +63,7 @@ Example:
 ## Tips
 
 1. You are allowed to use any resources available to you. Google is your friend!
-2. (Optional but required for future) [ROS2 Humble documentation](https://docs.ros.org/en/foxy/Releases/Release-Humble-Hawksbill.html) is a great place to start if you are new to ROS. This [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) walks you through how to create a publisher and subscriber node in c++, and this [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) in python.
-3. Hint: Make sure to use isinstance checks since messages are UDP to JSON and python may throw errors when doing math with data.
-4. The learning curve can be steep here! We don't want you to get stuck! Feel free to send high-level questions to ejxie@wisc.edu if you have questions! Please put "[WA]" in the subject or your question may be ignored!
+2. The test cases are the most basic implementation checks and should be easy to pass, you should be accounting for more edge cases on your own. 
+3. (Optional but required for future) [ROS2 Humble documentation](https://docs.ros.org/en/foxy/Releases/Release-Humble-Hawksbill.html) is a great place to start if you are new to ROS. This [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) walks you through how to create a publisher and subscriber node in c++, and this [page](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) in python.
+4. Hint: Make sure to use isinstance checks since messages are UDP to JSON and python may throw errors when doing math with data.
+5. The learning curve can be steep here! We don't want you to get stuck! Feel free to send high-level questions to ejxie@wisc.edu if you have questions! Please put "[WA]" in the subject or your question may be ignored!
