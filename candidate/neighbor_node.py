@@ -1,4 +1,5 @@
-
+#Author: 
+#Date:
 #This should be the only file you edit. You are free to look at other files for reference, but do not change them.
 #Below are are two methods which you must implement: euclidean_dist_to_origin and nearest_neighbor as well as the main function beacon handling. 
 #Helper Functions are allowed, but not required. You must not change the imports, the main function signature, or the return value of the main function.
