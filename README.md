@@ -2,6 +2,8 @@
 
 This coding challenge is designed for us to evaluate what you can bring to the table and an opportunity for you to get some hands on experience with the tools we use on the controls and infrastructure sub-teams. We use ROS2 Humble as our middleware for our modular system to communicate with each other. A good understanding of ROS is vital for our success. While we understand that this might be your first time hearing of ROS, this challenge also aims for us to see how you can learn on the fly, which is an important aspect of being part of this team. The challenge will simulate ROS2 publisher and subscribers system using UDP messages in Python to create a V2X like problem, something we will be doing this year. Your goal is to explore and learn the ROS2 concept and be able to understand your work. This coding challenge is not required to pass the application. 
 
+EDIT: Included is many variables which some are not used. You are highly encouraged to create your own methods as long as the orginal method still passes the test or you have a explaination on why it should be passing. Feel free to include more edge case testing and even create your own publisher variable. 
+
 ## Challenge Descrpiption
 
 In the package `neighbor_node.py` design the methods `euclidean_dist_to_origin` and `nearest_neighbor`. The two methods will make use of the car beacon messages sent. Then add the implementaion `beacon handling` in the main function. 
