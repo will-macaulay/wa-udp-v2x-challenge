@@ -39,7 +39,6 @@ def now_ms() -> int:
 
 def euclidean_dist_to_origin(pos) -> float:
     # TODO: validate pos is [x,y] of numbers; compute distance
-    # return float(math.hypot(x, y))
     return 0.0  # TODO
 
 def nearest_neighbor(neighbors: Dict[str, Dict[str, Any]]) -> Optional[Tuple[str, float]]:
